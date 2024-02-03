@@ -1,47 +1,47 @@
 # MeyawoPortfolio
 The first project we realized within M&Y Software Training Academy Consulting offers users the opportunity to create CVs dynamically.
 
-##Purpose and overview of the project:
+## Purpose and overview of the project:
 
 The main purpose of the first project completed by M&Y Software Training Academy Consulting is to enable users to create CVs dynamically. This project was developed using Asp.Net Framework and implemented with Entity Framework Db First approach.
 
-##Technologies used
+## Technologies used
 
--Asp.Net Framework
++ Asp.Net Framework
 
--C#
++ C#
 
--MVC
++ MVC
 
--MSSQL
++ MSSQL
 
--HTML
++ HTML
 
--CSS
++ CSS
 
--Bootstrap
++ Bootstrap
 
--JavaScript
++ JavaScript
 
--Entity Framework DB First
++ Entity Framework DB First
 
-##Frontend
+## Frontend
 
--HTML
++ HTML
 
--CSS
++ CSS
 
--Bootstrap
++ Bootstrap
 
--JavaScript
++ JavaScript
 
-##Admin Panel Features:
+## Admin Panel Features:
 
--Viewing Statistics
++ Viewing Statistics
 
--CRUD operations on all data on the page
++ CRUD operations on all data on the page
 
--View Incoming Messages.
++ View Incoming Messages.
 
 ![1](https://github.com/TunahanC/MeyawoPortfolio/assets/121380471/a0ee22ca-6bfd-4ef5-b0ec-f725b5de22be)
 
