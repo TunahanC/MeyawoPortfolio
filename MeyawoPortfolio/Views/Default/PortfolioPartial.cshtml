@@ -1,0 +1,51 @@
+﻿@model List<MeyawoPortfolio.Models.TblProject>
+<section class="section" id="portfolio">
+    <div class="container text-center">
+        <p class="section-subtitle">What I Did ?</p>
+        <h6 class="section-title mb-6">Portfolio</h6>
+        <!-- Carousel -->
+        <div id="portfolioCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                @for (int i = 0; i < Model.Count; i += 3)
+                {
+                    <div class="carousel-item @if(i == 0) { <text>active</text> }">
+                        <div class="row">
+                            @for (int j = i; j < i + 3 && j < Model.Count; j++)
+                            {
+                                <div class="col-md-4">
+                                    <a href="#" class="portfolio-card">
+                                        <img src="@Model[j].İmageUrl" class="portfolio-card-img"
+                                             alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                                        <span class="portfolio-card-overlay">
+                                            <span class="portfolio-card-caption">
+                                                <h5>@Model[j].Title</h5>
+                                                <p class="font-weight-normal">@Model[j].Description</p>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+            </div>
+            <a class="carousel-control-prev" href="#portfolioCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#portfolioCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div><!-- end of Carousel -->
+    </div><!-- end of container -->
+</section> <!-- end of portfolio section -->
+
+<script>
+    $(document).ready(function () {
+        $('#portfolioCarousel').carousel({
+            interval: 5000, // Otomatik geçiş süresi (ms) - 5 saniye
+            pause: 'hover' // Fare üzerine gelindiğinde geçişi duraklat
+        });
+    });
+</script>

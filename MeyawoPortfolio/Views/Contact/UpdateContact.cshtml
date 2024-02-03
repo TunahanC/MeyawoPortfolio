@@ -1,0 +1,34 @@
+﻿@model MeyawoPortfolio.Models.TblContact
+@{
+    ViewBag.Title = "UpdateContact";
+    Layout = "~/Views/AdminLayout/_Layout.cshtml";
+}
+
+<h2>Mesaj Güncelleme Sayfası</h2>
+
+<form method="post">
+    <label>Mesaj Id</label>
+    <input type="text" class="table table-bordered" name="Header" value="@Model.ContactID" />
+    <br />
+    <label>Gönderen</label>
+    <input type="text" class="table table-bordered" name="NameSurname" value="@Model.NameSurname" />
+    <br />
+    <label>Email</label>
+    <input type="text" class="table table-bordered" name="Email" value="@Model.Email" />
+    <br />
+    <label>Mesaj</label>
+    <textarea rows="4" class="table table-bordered" name="Message">@Model.Message</textarea>
+    <br />
+    <label>Tarih</label>
+    <input type="text" class="table table-bordered" name="SendDate" value="@Model.SendDate" />
+    <br />
+    <label>Mesaj Durumu</label>
+    <input type="text" class="table table-bordered" name="isRead" value="@Model.isRead" />
+    <br />
+    <label>Mesaj Kategorisi</label>
+    <input type="text" class="table table-bordered" name="MessageCategory" @Model.MessageCategory />
+    <br />
+    <button class="btn btn-info">Mesajı Güncelle</button>
+
+</form>
+

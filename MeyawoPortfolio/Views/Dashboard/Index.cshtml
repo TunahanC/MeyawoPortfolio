@@ -1,0 +1,124 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/_Layout.cshtml";
+}
+
+<!doctype html>
+<html lang="en">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin dashboard cards</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta property="og:url" content="https://tailwindflex.com/gopi/admin-dashboard-cards">
+    <meta property="og:title" content="Admin dashboard cards">
+    <meta property="og:description" content="Card groups for showing stats/info.">
+    <meta property="og:image" content="https://tailwindflex.com/public/images/thumbnails/admin-dashboard-cards/canvas.min.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="tailwindflex.com">
+    <meta property="twitter:url" content="https://tailwindflex.com/gopi/admin-dashboard-cards">
+    <meta name="twitter:title" content="Admin dashboard cards">
+    <meta name="twitter:description" content="Card groups for showing stats/info.">
+    <meta name="twitter:image:secure_url" content="https://tailwindflex.com/public/images/thumbnails/admin-dashboard-cards/canvas.min.webp">
+    <script src="https://cdn.tailwindcss.com/3.1.4"></script>
+</head>
+
+<body>
+
+    <div class="grid grid-cols-1 gap-4 px-4 mt-8 sm:grid-cols-4 sm:px-8">
+        <div class="flex items-center bg-white border rounded-sm overflow-hidden shadow">
+            <div class="p-4 bg-green-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none"
+                     viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z">
+                    </path>
+                </svg>
+            </div>
+            <div class="px-4 text-gray-700">
+                <h3 class="text-sm tracking-wider">Referans Sayısı</h3>
+                <p class="text-3xl"> @ViewBag.testimonialCount</p>
+            </div>
+        </div>
+        <div class="flex items-center bg-white border rounded-sm overflow-hidden shadow">
+            <div class="p-4 bg-blue-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none"
+                     viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2">
+                    </path>
+                </svg>
+            </div>
+            <div class="px-4 text-gray-700">
+                <h3 class="text-sm tracking-wider">Proje Sayısı</h3>
+                <p class="text-3xl">@ViewBag.projectCount</p>
+            </div>
+        </div>
+        <div class="flex items-center bg-white border rounded-sm overflow-hidden shadow">
+            <div class="p-4 bg-indigo-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none"
+                     viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z">
+                    </path>
+                </svg>
+            </div>
+            <div class="px-4 text-gray-700">
+                <h3 class="text-sm tracking-wider">Mesaj Sayısı</h3>
+                <p class="text-3xl">@ViewBag.messageCount</p>
+            </div>
+        </div>
+        <div class="flex items-center bg-white border rounded-sm overflow-hidden shadow">
+            <div class="p-4 bg-red-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none"
+                     viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4">
+                    </path>
+                </svg>
+            </div>
+            <div class="px-4 text-gray-700">
+                <h3 class="text-sm tracking-wider">Kategori Sayısı</h3>
+                <p class="text-3xl">@ViewBag.categoryCount</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed bottom-0 right-0 w-full z-[9999] p-2 text-center text-sm text-white bg-black">
+        This component is contributed by Gopi Yadav on tailwindflex.
+        &nbsp;<a class="text-gray-200 underline" href="https://tailwindflex.com/gopi/admin-dashboard-cards?utm_source=fullscreen-preview&utm_medium=footer">view component</a>
+    </div>
+    <br />
+
+    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+    <script>
+        const xValues = ["Referanslar", "Projeler", "Mesajlar", "Kategoriler", "Sosyal Medya"];
+        const yValues = [55, 49, 44, 24, 15];
+        const barColors = ["red", "green", "blue", "orange", "brown"];
+
+        new Chart("myChart", {
+            type: "bar",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    backgroundColor: barColors,
+                    data: yValues
+                }]
+            },
+            options: {
+                legend: { display: false },
+                title: {
+                    display: true,
+                    text: ""
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
