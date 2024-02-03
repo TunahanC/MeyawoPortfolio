@@ -1,5 +1,5 @@
 # MeyawoPortfolio
-The first project we realized within M&Y Software Training Academy Consulting offers users the opportunity to create CVs dynamically.
+The first project we realized within M&Y Yazılım Eğitim Akademi Consulting offers users the opportunity to create CVs dynamically.
 
 ## Purpose and overview of the project:
 
